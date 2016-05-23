@@ -7,9 +7,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-
-		<section id="portada" class="front background">
-			<header id="header" class="header contenedor"> <!-- header -->
+		<header id="header" class="header  background "> <!-- header -->
+			<div class="contenedor">
 				<figure class="logotipo"> <!-- logotipo -->
 				<img src="images/invie.png" width="186" height="60" alt="Invie logotipo"/>
 				</figure>
@@ -20,47 +19,45 @@
 							<a href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="#guitarras">Guitarras</a>
+							<a href="index.html#guitarras">Guitarras</a>
 						</li>
 						<li>
 							<a href="precios.html">Precios</a>
 						</li>
 					</ul>
 				</nav>
-			</header>
-			<div class="contenedor">
-				<h1 class="title">Guitarras <span>invie</span>sibles</h1><!-- titulo -->
-				<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
-				<button class="button">ver más</button><!-- boton -->
 			</div>
 
-		</section>
-
-		<section id="guitarras" class="guitarras contenedor">
-			<h2>Nuestras guitarras</h2><!-- titulo -->
-			<article class="guitarra"><!-- guitarra 1 -->
-				<div class="guitarras_guitarra">
-					<h3 class="title-b">Invie Acustica</h3>
-					<ol>
-						<li>Estilo bintage</li>
-						<li>Madera pura</li>
-						<li>Estuche invisibel de aluminio</li>
-					</ol>
-					<img class="image_guitarra_1" src="images/invie-acustica.png" width="350" alt="Guitarra Invie Acustica"/>
-				</div>
-			</article>
-
-			<article class="guitarra"><!-- guittarra 2 -->
-				<img class="image_guitarra_2"src="images/invie-classic.png" width="350" alt="Guitarra Invie Classic"/>
-				<div class="guitarras_guitarra">
-					<h3 class="title-b">Invie Classic</h3>
-					<ol>
-						<li>Estilo vintage</li>
-						<li>Liviana/li>
-						<li>Inicia tu camino como rockstar</li>
-					</ol>
-				</div>
-			</article>
+		</header>
+		<section class="table">
+		<div class="contenedor">
+			<table>
+				<thead>
+					<tr>
+						<th>Modelo</th>
+						<th>Precio</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Invie classic</td>
+						<td>$1000000</td>
+						<td>Una guitarra muy pro</td>
+					</tr>
+					<tr>
+						<td>Invie classic</td>
+						<td>$1000000</td>
+						<td>Una guitarra muy pro</td>
+					</tr>
+					<tr>
+						<td>Invie classic</td>
+						<td>$1000000</td>
+						<td>Una guitarra muy pro</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		</section>
 	</body>
 	<footer class="footer">
@@ -106,7 +103,7 @@
 			<div class="col2">
 				<label for="comentarios">comentarios</label>
 				<textarea name="comentarios" id="comentarios" cols="30" rows="8"></textarea>
-				<input class="button" type="submit" value="Enviar">
+				<input type="submit" value="Enviar">
 			</div>
 
 		</form>

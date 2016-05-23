@@ -3,18 +3,58 @@ body {
 	margin: 0;
 }
 
-button {
-	border-radius: 5px;
+input, textarea {
+	outline: 0;
+}
+
+input:focus, textarea:focus {
+	background: lightgray;
+}
+
+.button {
+	border-radius: 12px;
 	border: none;
 	background: #fd324e;
+	background: linear-gradient(to left, #fe344e, #ff7250);
 	color: white;
-	padding: 7px;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 7px 12px;
 	width: 100;
+}
+
+.background{
+	background-image: url('../images/background.png');
+	background-size: cover;
 }
 
 .contenedor {
 	width: 800px;
 	margin: auto;
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col1 {
+	margin-right: 25px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.col2 .button {
+	margin-top: 10px
+}
+
+.contacto {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
 }
 
 .contacto img {
@@ -29,6 +69,31 @@ button {
 	color: white;
 	display: block;
 	text-decoration: none;
+	margin: 10px 10px 10px;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table, th, td {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+.table {
+	margin: 50px 0;
 }
 
 .title  {
@@ -48,23 +113,44 @@ button {
 	margin-bottom: 20px;
 }
 
-.front {
-	background-image: url('../images/background.png');
-	color: white;
-	padding: 20px;
+.title span {
+	text-decoration: underline;
 }
 
-.footer {
-	background: #273b47;
+.front {
+	color: white;
+	height: 500px;
+	padding: 20px;
 }
 
 .front button {
 	margin-bottom: 70px;
 }
 
+.footer {
+	background: #273b47;
+	padding: 50px 10px;
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white;
+
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 12px
+}
+
 .guitarras {
 	color: #1F313C;
-
+	margin-bottom: 65px
 }
 .guitarras h2 {
 	font-family: 'Montserrat', sans-serif;
@@ -79,10 +165,10 @@ button {
 }
 
 .guitarra {
- border: 1px solid #1F313C;
- border-radius: 25px 65px;
- margin: 10px;
- padding: 10px;
+	border: 1px solid #1F313C;
+	border-radius: 25px 65px;
+	margin: 10px 10px 30px 10px;
+	padding: 10px;
 }
 
 .guitarra ol {
@@ -100,19 +186,38 @@ button {
 	top: 55px;
 }
 
+.intereses label {
+	font-size: 12px;
+}
+
 .logotipo {
 	display: inline-block;
+	margin-left: 0;
 }
 
 .menu {
 	display: inline-block;
 	font-size: 24px;
-
 }
 
+.menu a {
+	color: white;
+	text-decoration: none
+}
 .menu li {
 	display: inline-block;
 	margin-left: 30px;
+}
+
+.menu li:before {
+	content:'°';
+	color: white;
+	font-size: 50px;
+	position: relative;
+    top: 20px;
+}
+.sexo {
+	margin-top: 12px;
 }
 
 /*font-family: 'Montserrat', sans-serif;*/
